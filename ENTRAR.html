@@ -5,15 +5,42 @@
     <a href= "contato.html"> CONTATO | </a>
     <a href= "sobre.html"> SOBRE | </a>
     <a href= "ENTRAR.html"> ENTRAR </a>
+     <link rel="stylesheet" href="entrar.css">
   </div>
   
-<img src="logo if.jpg"> <br><br>
-  
-<form>
-  <label for="usuario">Usuário</label>:<br>
-  <input type= "text" name="usuario" id= "usuario"> <br>
-  <label for="senha">Senha</label>:<br>
-  <input type= "password" name="senha" id= "senha"> <br>
-  <input type= "submit" value= "Entrar"> <br>
-  <a href= "#"> Esqueci a senha </a>
-</form>  
+  <header id="cabecalho"> 
+    <nav>
+      <object width="100%" height="65px" data="menu.html"></object>
+    </nav>
+
+    <img src="imagens/logo if.jpg" alt=" " /> 
+
+  </header>
+
+  <main> 
+    <h1>Entrar</h1>
+        <form method="POST">
+            <div class="section">
+                <label for="entrar-usuario">Usuário</label>
+                <input class="styled-input" type="text" name="usuario" id="entrar-usuario" required />
+            </div>
+            <br>
+            <div  class="section">
+                <label for="entrar-senha">Senha</label>
+                <input class="styled-input" type="password" name="senha" id="entrar-senha" required />
+            </div>
+            <br>
+            <div  class="section">
+                <button class="form-button" type="submit">Entrar</button>
+                <a href="#">Esqueci a senha</a>
+            </div>
+        </form>
+  </main>
+
+  <footer>     
+      <object width="100%" height="200px" data="rodape.html"></object>
+  </footer>
+
+  </body>
+
+  </html>
